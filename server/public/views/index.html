@@ -7,10 +7,29 @@
     <script src="/vendor/angular.min.js" type="text/javascript"></script>
     <script src="/vendor/angular-route.min.js" type="text/javascript"></script>
     <script src="/scripts/client.js" type="text/javascript"></script>
+    <script src="scripts/high-five-service.js" type="text/javascript"></script>
   </head>
-  <body>
-
-
+  <body ng-app="myApp" >
+    <div class = "jumbotron">
+      <h1>High Five Fun</h1>
+    </div>
+      <div ng-controller= 'TheController as lola' ng-init="">
+      <div class ="container">
+        <div class = "character">
+          <h5>this is where the character image will go</h5>
+            character name
+              character info
+        </div>
+        <button ng-click='lola.highFive()'>High Five</button>
+        <!-- <div class ='container row'> -->
+        <!-- <div ng-repeat ='mooseStuff in drake.drakesmooses' class ='col-sm-4'>
+          <h2>{{mooseStuff.name}}</h2>
+          <h4>{{mooseStuff.description}}</h4>
+          <h5>{{mooseStuff.hobby}}</h5>
+          <img src = "http://www.pngall.com/wp-content/uploads/2016/06/Drake-PNG-File.png" class= "drakeface"/>
+      </div> -->
+      </div>
+      </div>
 
   </body>
 </html>
