@@ -21,13 +21,13 @@
               character info
         </div>
         <button ng-click='lola.highFive()'>High Five</button>
-        <!-- <div class ='container row'> -->
-        <!-- <div ng-repeat ='mooseStuff in drake.drakesmooses' class ='col-sm-4'>
-          <h2>{{mooseStuff.name}}</h2>
-          <h4>{{mooseStuff.description}}</h4>
-          <h5>{{mooseStuff.hobby}}</h5>
-          <img src = "http://www.pngall.com/wp-content/uploads/2016/06/Drake-PNG-File.png" class= "drakeface"/>
-      </div> -->
+        <div class ="outputArea">
+          <h2>Character Skill Level: {{ lola.characterSkillLevel }}</h2>
+          <h2>Success Number: {{ lola.successNum }}</h2>
+        </br>
+          <h1> What happened? <br /> {{lola.message}}</h1>
+          Successful High Fives: {{lola.highFiveCount}}
+        </div>
       </div>
       </div>
 

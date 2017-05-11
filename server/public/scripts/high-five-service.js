@@ -11,7 +11,6 @@ myApp.service('HighFive', function(){
     };
 
 
-
   this.updateCounter = function(){
     console.log("updating the counter!");
     successCounter++;
