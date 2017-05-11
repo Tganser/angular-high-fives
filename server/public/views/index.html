@@ -4,29 +4,33 @@
     <meta charset="utf-8">
     <title>Angular Routing Magic!</title>
     <link rel="stylesheet" href="/styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme|Dosis|Fira+Sans" rel="stylesheet">
     <script src="/vendor/angular.min.js" type="text/javascript"></script>
     <script src="/vendor/angular-route.min.js" type="text/javascript"></script>
     <script src="/scripts/client.js" type="text/javascript"></script>
-    <script src="scripts/high-five-service.js" type="text/javascript"></script>
+    <script src="scripts/randNum-service.js" type="text/javascript"></script>
+    <script src="scripts/success-count-service.js" type="text/javascript"></script>
   </head>
   <body ng-app="myApp" >
     <div class = "jumbotron">
-      <h1>High Five Fun</h1>
+      <h1>High Five the Office</h1>
     </div>
       <div ng-controller= 'TheController as lola' ng-init="">
       <div class ="container">
         <div class = "character">
-          <h5>this is where the character image will go</h5>
-            character name
-              character info
+          <img src="https://www.gannett-cdn.com/-mm-/27f6664fb8ef48299f06ee96e2d6771613497b2a/c=170-0-2830-2000&r=x404&c=534x401/local/-/media/2017/02/08/USATODAY/USATODAY/636221410316183057-A01-v2-REAR17.jpg"/>
+          <!-- {{lola.ch1img}} -->
+            <h3>{{lola.ch1name}}</h3>
+              <h5>{{lola.ch1info}}</h5>
         </div>
         <button ng-click='lola.highFive()'>High Five</button>
         <div class ="outputArea">
-          <h2>Character Skill Level: {{ lola.characterSkillLevel }}</h2>
-          <h2>Success Number: {{ lola.successNum }}</h2>
+          <!-- <h2>Character Skill Level: {{ lola.characterSkillLevel }}</h2>
+          <h2>Success Number: {{ lola.successNum }}</h2> -->
         </br>
-          <h1> What happened? <br /> {{lola.message}}</h1>
-          Successful High Fives: {{lola.highFiveCount}}
+          <h1> {{lola.message}}</h1>
+          <h2>Successful High Fives: {{lola.highFiveCount}}</h2>
         </div>
       </div>
       </div>
