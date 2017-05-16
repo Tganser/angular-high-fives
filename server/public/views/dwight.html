@@ -1,0 +1,19 @@
+<!-- <div ng-controller= 'DwightController as dw'> -->
+<div class ="container">
+  <div class = "character">
+    <img src="http://cdn.inquisitr.com/wp-content/uploads/2013/03/dwight1.jpg"/>
+      <h3>{{vm.ch1name}}</h3>
+        <h5>{{vm.ch1info}}</h5>
+  </div>
+  <button ng-click='vm.highFive()'>High Five</button>
+  <div class ="outputArea">
+  </br>
+    <h2>Dwight Skill Level: {{vm.characterSkillLevel}}</h2>
+    <h1> {{vm.message}}</h1>
+    <h2>I've made {{vm.count}} of the {{vm.highFiveCount}} successful high fives!</h2>
+
+    <!-- <h3>Dwight's Successful High Fives: {{dw.count}}</h3>
+    <h2>Total Successful High Fives: {{dw.highFiveCount}}</h2> -->
+  </div>
+</div>
+<!-- </div> -->

@@ -1,0 +1,19 @@
+<!-- <div ng-controller= 'JimController as jim'> -->
+<div class ="container">
+  <div class = "character">
+    <img src="http://net.archbold.k12.oh.us/ahs/web_class/Fall_10/TheOffice_Nofziger/Images/Jim%20Halpert%201.jpg"/>
+      <h3>{{vm.ch1name}}</h3>
+        <h5>{{vm.ch1info}}</h5>
+  </div>
+  <button ng-click='vm.highFive()'>High Five</button>
+  <div class ="outputArea">
+  </br>
+    <h2>Jim Skill Level: {{vm.characterSkillLevel}}</h2>
+    <h1> {{vm.message}}</h1>
+    <h2>I've made {{vm.count}} of the {{vm.highFiveCount}} successful high fives!</h2>
+
+    <!-- <h3>Jim's Successful High Fives: {{jim.count}}</h3>
+    <h2>Total Successful High Fives: {{jim.highFiveCount}}</h2> -->
+  </div>
+</div>
+<!-- </div> -->

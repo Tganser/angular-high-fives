@@ -1,0 +1,18 @@
+<!-- <div ng-controller= 'TheController as lola' ng-init=""> -->
+<div class ="container">
+  <div class = "character">
+    <img src="https://www.gannett-cdn.com/-mm-/27f6664fb8ef48299f06ee96e2d6771613497b2a/c=170-0-2830-2000&r=x404&c=534x401/local/-/media/2017/02/08/USATODAY/USATODAY/636221410316183057-A01-v2-REAR17.jpg"/>
+      <h3>{{vm.ch1name}}</h3>
+        <h5>{{vm.ch1info}}</h5>
+  </div>
+  <button ng-click='vm.highFive()'>High Five</button>
+  <div class ="outputArea">
+  </br>
+    <h2>Pam Skill Level: {{vm.characterSkillLevel}}</h2>
+    <h1> {{vm.message}}</h1>
+    <h2>I've made {{vm.count}} of the {{vm.highFiveCount}} successful high fives!</h2>
+    <!-- <h3>Pam's Successful High Fives: {{lola.count}}</h3>
+    <h2>Total Successful High Fives: {{lola.highFiveCount}}</h2> -->
+  </div>
+</div>
+<!-- </div> -->
